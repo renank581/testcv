@@ -82,7 +82,20 @@ function validateForm() {
 }
 
 
-
+function menuToggle() {
+  var nav = document.getElementById("myLinks");
+  var ham = document.getElementsByClassName("menu-button-ham");
+  // var cross = document.getElementsByClassName("menu-button-cross");
+  if (nav.style.display === "block") {
+    nav.style.display = "none";
+    // cross.style.display = "none";
+    ham.style.display = "block";
+  } else {
+    nav.style.display = "block";
+    ham.style.display = "none";
+    // cross.style.display = "block";
+  }
+}
 
 
 

@@ -8,11 +8,19 @@
 <body>
   <header>
     <div class="head">
-    <h1>Welcome to My Portfolio</h1>
-  </div>
+      <h1>Gallery</h1>
+    </div>
+    
 
   <div class="navigation_bar">
-    <nav>
+    <div class='menu-button menu-button-ham'>
+      <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+        <!-- <i class="fa fa-bars"></i> -->
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </div>
+    
+  <nav id="myLinks">
       <ul>
         <li><a href=index.html>Home</a></li>
         <li>
@@ -66,10 +74,8 @@
     </li>
     </nav>
   </div>
-
-
   </header>
-
+  <h1>Welcome to My Portfolio</h1>
 <h2>Accordion with symbols</h2>
 <p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign is replaced with a "minus" sign.</p>
 <button class="accordion">Section 1</button>

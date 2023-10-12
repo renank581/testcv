@@ -12,12 +12,20 @@
 <body>
   <header>
     <div class="head">
+      <img src="header_pic.jpg" class="header-img" alt="Profile Image">
       <h1>Welcome to My Portfolio</h1>
     </div>
     
 
   <div class="navigation_bar">
-    <nav>
+    <div class='menu-button menu-button-ham'>
+      <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+        <!-- <i class="fa fa-bars"></i> -->
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </div>
+    
+  <nav id="myLinks">
       <ul>
         <li><a href=index.html>Home</a></li>
         <li>
@@ -75,19 +83,31 @@
 
 
 
-
-  
-
   <div class="content-container">
     <div class="introduction">
-      <img src="profile.png" alt="Profile Image">
-      <h2>Raju Gurung</h2>
+      <div class="grid-container">
+        
+        <div class="item">
+          <h2>Introduction</h2>
       <p>Greetings and welcome to my  small world on internet! I'm happy to have you here on my website. This website gives a window into my world, displaying my passions, experience, and journey.
         My name is Raju Gurung, I am a content creator and a software developer. I believe in the strength of creativity and the way it can have an effect on our lives. Through this website, I wish to share my studies, understanding, and interest with you.
+        </p>
+        <p>
         Within the different sections of this site, you may receive insights into my experiences, from content creating to software  developing. Explore my portfolio to explore some of my fine work, and don't hesitate to contact me through my contact page.
         </p>
+        </div>
+        <div class="item">
+          <img src="profile.png" alt="Profile Image">
+          <h4>Raju Gurung</h4>
+        </div>
+      </div>
+      
+      
     </div>
   </div>
+  
+
+
   
   <div class="slideshow-container">
   

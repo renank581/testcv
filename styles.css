@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #94B0DA;
   }
   
   header {
@@ -113,7 +114,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #94B0DA;
-  padding-top: 80px; /* Adjusted padding to accommodate fixed header and profile image */
+  padding-top: 20px; /* Adjusted padding to accommodate fixed header and profile image */
   margin-top: 120px; /* Adjusted margin to create space below the header */
 }
   
@@ -126,17 +127,27 @@ body {
   
   .introduction img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
-    margin-bottom: 20px;
-    
+  
+    margin-top: 48px;
   }
 
 
+  .head img, .head h1 {
+    display: inline-block;
+    vertical-align: middle; /* Vertically align items */
+  }
 
 
-
+/**
+Header Image
+**/
+.header-img {
+  width: 50px;
+  height: 50px;
+}
 
 
 
@@ -156,6 +167,7 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 /* Caption text */
@@ -664,28 +676,94 @@ contatc form */
 }
 
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+ 
+  padding: 30px 40px;
+  grid-gap: 20px;
+}
+
+.grid-container > div > p {
+  text-align: justify;
+
+}
 
 
+.menu-button {
+  display: none;
+}
 
+@media screen and (min-width:768px) {
+  nav {
+    display: block;
+  }
+}
 
-
-
-
-Respoinsive style for smaller screen
+/* Respoinsive style for smaller screen */
+/* @media screen and (max-width:768px) { */
 @media screen and (max-width:768px) {
   header{
       padding:10px
   }
 
+  nav {
+    display: none;
+  }
+
+
   nav ul{
       text-align:center;
-      height: 40px;
+      /* height: 40px; */
+    height: auto;
   }
 
   nav li{
       display:block;
       margin-bottom:10px;
   }
+  /* .introduction {
+    margin-top: 150px;
+  } */
+
+  .menu-button {
+    display: flex;
+    justify-content: end;
+  }
+
+  .icon:hover {
+   color: white;
+  }
+
+  .content-container {
+   
+    margin-top: 96px; /* Adjusted margin to create space below the header */
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .item:nth-child(1) {
+    grid-column: 2; /* Move the first item to the second column */
+  }
+  
+  .item:nth-child(2) {
+    grid-column: 1; /* Move the second item to the first column */
+  }
+
+  .navigation_bar {
+    padding: 10px;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  /* .menu-button-cross {
+    display: none;
+  } */
 }
 
 

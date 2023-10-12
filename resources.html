@@ -8,16 +8,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Resources</h1>
-  </header>
+
   <header>
     <div class="head">
-    <h1>Welcome to My Portfolio</h1>
-  </div>
+      <h1>Resources</h1>
+    </div>
+    
 
   <div class="navigation_bar">
-    <nav>
+    <div class='menu-button menu-button-ham'>
+      <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+        <!-- <i class="fa fa-bars"></i> -->
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </div>
+    
+  <nav id="myLinks">
       <ul>
         <li><a href=index.html>Home</a></li>
         <li>
@@ -71,11 +77,10 @@
     </li>
     </nav>
   </div>
-
-
   </header>
 
   <div class="content-container">
+    
     <div class="resource">
       <h2>Resource 1: Example Resource</h2>
       <p>Description of Resource 1. You can add any relevant information or links here.</p>
